@@ -25,7 +25,7 @@ app.use('/forecast', (req, res) => {
     ForecastArn: FORECAST_ARN,
     StartDate: startDate,
     EndDate: endDate,
-    Filters: { 'item_id': 'KR' }
+    Filters: { 'item_id': 'US' }
   };
 
   forecastqueryservice.queryForecast(params, function (err, data) {
