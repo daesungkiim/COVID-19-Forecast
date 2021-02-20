@@ -9,7 +9,7 @@ const AWS = require('aws-sdk');
 AWS.config.apiVersions = {
   forecastqueryservice: '2018-06-26',
 };
-AWS.config.update({region: 'ap-northeast-1'});
+AWS.config.update({region: 'us-east-1'});
 
 const forecastqueryservice = new AWS.ForecastQueryService();
 const FORECAST_ARN = process.env.FORECAST_ARN;
